@@ -14,3 +14,11 @@ This project displays to the user an input box where he/she has to input any nam
 
 Run ng `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+##Technologies used
+
+HTML
+CSS
+Javascript
+Bootstrap
+Angular CLI version 7.2.2
+
