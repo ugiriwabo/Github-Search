@@ -1,5 +1,6 @@
+<label><strong>Search the user name here:</strong></label>
 <div class="search">
-  <input type="Search" placeholder="Search.." [(ngModel)]="userName">
+  <input type="Search" placeholder="Enter username" [(ngModel)]="userName">
   <button type="submit" (click) ='submit()'>Search</button>
 </div>
 
@@ -7,8 +8,8 @@
  
   <div class="row">
     <blockquote class="text-center text-lg">
-      <p appStrikethrough> name:{{search.name}}</p>
       <img src="{{search.avatar_url}}">
+      <p appStrikethrough> name:{{search.name}}</p>
       <p> public_repos:{{search.public_repos}}</p>
       <p> followers:{{search.followers}}</p>
       <p> following:{{search.following}}</p>
