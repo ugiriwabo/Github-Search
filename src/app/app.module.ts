@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchFormsComponent } from './search-forms/search-forms.component';
 import { SearchComponent } from './search/search.component';
-import{FormsModule} from '@angular/forms'
+import{FormsModule} from '@angular/forms';
+import { StrikethroughDirective } from './strikethrough.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchFormsComponent,
-    SearchComponent
+    SearchComponent,
+    StrikethroughDirective
   ],
   imports: [
     BrowserModule,

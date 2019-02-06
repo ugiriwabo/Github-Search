@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA-DfNfUAozNds6mzBZ_oVp3w0z3OFM-4uLQCCf0FLzcPaJ3M1IQ');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
