@@ -22,3 +22,12 @@ Javascript
 Bootstrap
 Angular CLI version 7.2.2
 
+##Project Setup Instruction
+
+You would need the following to access the website:
+
+Smart phone/PC/laptop/Desktop/Tablet or any PDA
+Internet connectivity (either wireless or ethernet)
+A web browser(Chrome is most recommendable).
+
+
