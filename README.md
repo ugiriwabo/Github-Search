@@ -10,3 +10,7 @@ UGIRIWABO ALINE CONSOLEE
 
 This project displays to the user an input box where he/she has to input any name, then once he/she click on the "Search" button, the app have to search it at "https://github.com/users/" and displays the user data such as the name, image on profile, location, number of repositories, number of following persons as well as number of followers.
 
+##Development server
+
+Run ng `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
