@@ -1,28 +1,31 @@
+.search input[type=search]{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 20%;
+  background: #f1f1f1;  
+}
 
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .search input[type=search]{
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 20%;
-    background: #f1f1f1;
-  }
-  .search button{
-    padding: 10px;
-    font-size: 16px;
-    float: left;
-    width: 6%;
-    
-    background: grey;
+.search button{
+  padding: 10px;
+  font-size: 16px;
+  float: left;
+  width: 6%;
+  background: grey;
+  color: white;  
+}
+p{
     color: white;
-    
-  }
+    font-size: 30px;
+    margin-left: 350px;
+}
+
+a{
+    margin-left: 350px;
+    font-size: 30px;
+    color: red;   
+}
+img{
+    margin-left: 350px;
+}
