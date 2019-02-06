@@ -15,7 +15,8 @@ export class SearchRequestService {
     this.search= new Search ("","",0,0,0,"")
   }
 
-  searchRequest(){
+  searchRequest(user){
+    var userInput=user
     interface ApiResponse{
       avatar_url:string;
       name:string;
@@ -25,7 +26,7 @@ export class SearchRequestService {
       html_url:string
     }
     let promise =new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>(environment.apikey).toPromise().then(response=>{
+      this.http.get<ApiResponse>('https://api.github.com/users/'+ userInput + "?access_token=4ffdfc5f0f8eed2003c5a2d95e5a4f9b01d39f08").toPromise().then (response=>{
       this.search.avatar_url=response.avatar_url
       this.search.name=response.name
       this.search.public_repos=response.public_repos
@@ -36,12 +37,12 @@ export class SearchRequestService {
       resolve()
     },
     error=>{
-      this.search.avatar_url="Never, never, never give up."
-      this.search.name="winston churchill"
-      // this.search.name="winston churchill"
-      // this.search.name="winston churchill"
-      // this.search.name="winston churchill"
-      // this.search.name="winston churchill"
+      this.search.avatar_url=""
+      this.search.name=""
+      this.search.public_repos=0
+      this.search.followers=0
+      this.search.following=0
+      this.search.html_url=""
       reject(error)
     })
   })
