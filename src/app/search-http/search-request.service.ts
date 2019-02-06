@@ -12,7 +12,7 @@ export class SearchRequestService {
   search:Search;
 
   constructor(private http:HttpClient) { 
-    this.search= new Search ("","",0,0,0,"")
+    this.search= new Search ("","",0,0,0,"",new Date())
   }
 
   searchRequest(user){
@@ -23,7 +23,8 @@ export class SearchRequestService {
       public_repos:number;
       followers:number;
       following:number;
-      html_url:string
+      html_url:string;
+      completeDate:Date
     }
     let promise =new Promise((resolve,reject)=>{
       this.http.get<ApiResponse>('https://api.github.com/users/'+ userInput + "?access_token=4ffdfc5f0f8eed2003c5a2d95e5a4f9b01d39f08").toPromise().then (response=>{
@@ -33,7 +34,6 @@ export class SearchRequestService {
       this.search.followers=response.followers
       this.search.following=response.following
       this.search.html_url=response.html_url
-
       resolve()
     },
     error=>{
@@ -43,6 +43,7 @@ export class SearchRequestService {
       this.search.followers=0
       this.search.following=0
       this.search.html_url=""
+      this.search.completeDate=new Date()
       reject(error)
     })
   })

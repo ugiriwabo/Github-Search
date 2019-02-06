@@ -18,7 +18,7 @@ export class SearchComponent implements OnInit {
     this.searchService.searchRequest(this.userName)
   }
   constructor(private searchService:SearchRequestService) { 
-   
+   this.search= new Search ("","",0,0,0,"",new Date())
   }
 
   
