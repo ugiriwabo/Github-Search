@@ -30,4 +30,7 @@ Smart phone/PC/laptop/Desktop/Tablet or any PDA
 Internet connectivity (either wireless or ethernet)
 A web browser(Chrome is most recommendable).
 
+##Link to live site on GitHub Pages
+
+https://github.com/ugiriwabo/Github-Search
 
